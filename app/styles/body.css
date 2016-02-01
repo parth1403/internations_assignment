@@ -1,0 +1,21 @@
+.body{
+
+}
+
+.backgrid thead .delete, .backgrid thead .action, .backgrid tbody .delete, .backgrid tbody .action{
+  width: 60px;
+  text-align: center;
+}
+.users-container{
+
+}
+
+
+
+.groups-container{
+}
+
+
+.edit-user-form-container .groups-row{
+  height: 100px;
+}

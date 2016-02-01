@@ -1,0 +1,73 @@
+.btn{
+  cursor: pointer;
+	border-width: 0;
+  padding: 7px 14px;
+  font-size: 14px;
+	outline: none !important;
+  background-image: none !important;
+  filter: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  background-color: #E5E5E5;
+}
+.btn:hover{
+  background-color: lightgray;
+}
+.btn-sm, .btn-xs{
+  padding: 4px 10px 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.btn-xs{
+  padding: 1px 5px;
+}
+.btn-circle{
+  border-radius: 25px !important;
+}
+
+.btn.red{
+  color: #FFFFFF;
+  background-color: #d84a38;
+}
+.btn.red:hover{
+  background-color: #c63927;
+}
+.btn.red:disabled{
+  background-color: #c63927;
+  opacity: 0.5;
+}
+.btn.blue{
+  color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.btn.blue:hover{
+  background-color: #3379b5;
+    border-color: #2a6496;
+}
+.btn.green{
+  color: #fff;
+  background-color: #35aa47;
+}
+.btn.green:hover{
+  background-color: #2d8f3c;
+}
+.btn.purple{
+  color: #fff;
+  background-color: #8E44AD;
+}
+.btn.purple:hover{
+  background-color: #793a93;
+}
+
+
+.btn.green-stripe{
+  border-left: 3px solid #35aa47;
+}
+.btn.blue-stripe{
+  border-left: 3px solid #4B8DF8;
+}

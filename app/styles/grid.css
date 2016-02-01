@@ -1,0 +1,29 @@
+.backgrid{
+  border: 1px solid #dddddd;
+  margin-top: 10px;
+}
+.backgrid thead{
+  background-color: #DDD;
+}
+.backgrid thead>tr>th{
+  font-size: 14px;
+  font-weight: 600;
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+  padding: 8px;
+  line-height: 1.42857143;
+  background-color: none;
+}
+.backgrid tbody>tr:nth-child(odd){
+  background-color: #f9f9f9;
+}
+.backgrid tbody td{
+  height: 30px;
+  font-size: 14px;
+}
+.backgrid thead .renderable {
+  text-align: left;
+}
+.backgrid tbody .renderable {
+
+}
