@@ -6,7 +6,7 @@ define([
   'utils/DataFactory',
   'utils/formvalidator',
   'text!templates/editgroup.tpl'
-], function ( $, _, Backbone, UserModel, DataFactory, Validator, Tmpl) {
+], function ( $, _, Backbone, GroupModel, DataFactory, Validator, Tmpl) {
 
   var View = Backbone.View.extend({
 
@@ -53,9 +53,9 @@ define([
           formData      = jFormEl.serializeArray(),
           formData      = Validator.validate( formData, me.validators ),
           allValidField = true,
-          groupModel    = me.collection.findWhere({group_id : this.group_id}),
+          groupModel    = me.collection.findWhere({"group_id" : this.group_id}),
           data = {},
-          msg
+          msg, group_id
       ;
 
       for( var i = 0; i < formData.length; i++ ){
@@ -78,8 +78,9 @@ define([
           msg += " edited successfully.";
         }else{
           groupModel = new GroupModel();
+          group_id = data.group_id = parseInt(Math.random() * 10000);
           groupModel.set(data);
-          me.collection.push(groupModel);
+          me.collection.addGroup(DataFactory, groupModel);
           msg += " created successfully.";
         }
 

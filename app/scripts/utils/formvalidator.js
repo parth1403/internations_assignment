@@ -4,9 +4,9 @@ define([
 
 
   function valAlphabet( input ){
-    var pattern = /^[A-Za-z\s]+$/;
-    var valid = pattern.test(input) && input.length > 5;
-    var msg = !valid ? "Invalid name. Only alphabets with spaces are allowed." : "";
+    var pattern = /^[A-Za-z_][A-Za-z\s]*[A-Za-z_]$/;
+    var valid = pattern.test(input) && input.length > 2;
+    var msg = !valid ? "Invalid name. Only alphabets with spaces are allowed. Min length is three." : "";
     return {
       valid: valid,
       errorMsg: msg
